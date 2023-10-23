@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- lo hace nav.js -->
+    </nav>
+
+    <section class="cart-heading-section">
+        <h2 class="main-title">Shopping Cart</h2>
+        <div class="cart-container">
+            <div class="cart-empty disabled">
+                <p class="empty-message" id="empty-message">Your cart is empty. <i class="bi bi-emoji-frown"></i></p>
+                <a href="index.html"><p>Keep shopping. <i class="bi bi-arrow-right"></i></p></a>
+            </div>
+
+            <div class="product-container disabled">
+                <p>Product</p>
+            </div>
+
+            
+            <div class="cart-action disabled">
+                <div class="clean-cart">
+                    <button id="clean-cart-button" class="clean-cart-button">Clean Cart</button>
+                </div>
+                <div class="checkout-summary">
+                    <div class="total-amount">
+                        <p>Total Amount: </p> 
+                        <p id="total"></p>
+                    </div>
+                    <button class="checkout-button">Checkout</button>
+                </div>
+            </div>
+
+            <div class="cart-buy disabled">
+                <p class="buy-message" id="buy-message">Thank you for your purchase. <i class="bi bi-emoji-laughing"></i></p>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    
+
+    <footer id="footer">
+        <!-- lo hace footer.js -->
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src ="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src ="js/footer.js"></script>
+</body>
+</html>
