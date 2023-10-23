@@ -1,0 +1,318 @@
+[
+ 
+    {
+        "id": "men-01",
+        "title": "SENSE OF BELONGING RAISIN TEE",
+        "image": "./img/men/men01.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Camiseta de manga corta confeccionada en algodón con gráfico en pecho y espalda, y corte relajado.",
+        "price": 35,
+        "size": ["S", "M", "L", "XL"],
+        "sale": true
+    },
+    {
+        "id": "men-02",
+        "title": "CHERRY TEE",
+        "image": "./img/men/men02.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Camiseta de manga corta confeccionada en algodón con gráfico en pecho y espalda, y corte relajado.",
+        "price": 50,
+        "size": ["S", "M", "L", "XL"],
+        "sale": false
+    },
+    {
+        "id": "men-03",
+        "title": "COURTING CHAIR SPRUCE TEE",
+        "image": "./img/men/men03.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Camiseta de manga corta confeccionada en algodón con gráfico en pecho y espalda, y corte relajado.",
+        "price": 35,
+        "size": ["S", "M", "L", "XL"],
+        "sale": false
+    },
+    {
+        "id": "men-04",
+        "title": "GREY MELANGE GRAPHIC CREWNECK",
+        "image": "./img/men/men04.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Sudadera oversize confeccionada en algodón, perchado en el interior, con cuello caja y logo estampado en pecho.",
+        "price": 70,
+        "size": ["S", "M", "L", "XL"],
+        "sale": true
+    },
+    {
+        "id": "men-05",
+        "title": "SLATE GRAPHIC CREWNE",
+        "image": "./img/men/men05.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Sudadera oversize confeccionada en algodón, perchado en el interior, con cuello caja y logo estampado en pecho.",
+        "price": 70,
+        "size": ["S", "M", "L", "XL"],
+        "sale": false
+    },
+    {
+        "id": "men-06",
+        "title": "NAVY LOCAL LEISURE REGULAR HOODIE",
+        "image": "./img/men/men06.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Sudadera oversize confeccionada en algodón, perchado en el interior, con cuello caja y logo estampado en pecho.",
+        "price": 70,
+        "size": ["S", "M", "L", "XL"],
+        "sale": false
+    },
+    {
+        "id": "men-07",
+        "title": "THYME LOGO TEE",
+        "image": "./img/men/men07.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Camiseta de manga corta confeccionada en algodón con logo estampado en pecho, y corte relajado.",
+        "price": 35,
+        "size": ["S", "M", "L", "XL"],
+        "sale": false
+    },
+    {
+        "id": "men-08",
+        "title": "SLATE EMILIO TEE",
+        "image": "./img/men/men08.png",
+        "category": {
+            "name": "Clothes",
+            "id": "clothes"
+        },
+        "description": "Camiseta de manga corta confeccionada en algodón con parche de Emilio en pecho, y corte relajado.",
+        "price": 35,
+        "size": ["S", "M", "L", "XL"],
+        "sale": false
+    },
+    {
+        "id": "shoes-01",
+        "title": "ELAN LEATHER ECRU NAVY",
+        "image": "./img/shoes/shoes01.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": false
+    },
+    {
+        "id": "shoes-02",
+        "title": "ELAN SUEDE HYDRO BOG",
+        "image": "./img/shoes/shoes02.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": true
+    },
+    {
+        "id": "shoes-03",
+        "title": "ELAN SUEDE HYDRO BOG",
+        "image": "./img/shoes/shoes03.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": false
+    },
+    {
+        "id": "shoes-04",
+        "title": "ELAN LEATHER ECRU ANTHRACITE",
+        "image": "./img/shoes/shoes04.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": false
+    },
+    {
+        "id": "shoes-05",
+        "title": "ELAN LEATHER ECRU ROAST",
+        "image": "./img/shoes/shoes05.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": false
+    },
+    {
+        "id": "shoes-06",
+        "title": "ELAN LEATHER OFF WHITE",
+        "image": "./img/shoes/shoes06.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": true
+    },
+    {
+        "id": "shoes-07",
+        "title": "ELAN LEATHER ECRU JASPER",
+        "image": "./img/shoes/shoes07.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": false
+    },
+    {
+        "id": "shoes-08",
+        "title": "HIGBY V2 COCOA",
+        "image": "./img/shoes/shoes08.png",
+        "category": {
+            "name": "Shoes",
+            "id": "shoes"
+        },
+        "description": "Zapatilla inspirada por las sneakers de baloncesto de los años 80 adaptada para un uso diario actual. Compuesta de un corte de napa, suela de goma y cordón de algodón",
+        "price": 109,
+        "size": [39, 40, 41, 42, 43, 44],
+        "sale": false
+    },
+    {
+        "id": "accessories-01",
+        "title": "LLAVERO WALKING CLUB",
+        "image": "./img/accessories/accessories01.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "",
+        "price": 8.5,
+        "size": ["U"],
+        "sale": false
+    },
+    {
+        "id": "accessories-02",
+        "title": "MECHERO WALKING CLUB",
+        "image": "./img/accessories/accessories02.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "",
+        "price": 4.5,
+        "size": ["U"],
+        "sale": true
+    },
+    {
+        "id": "accessories-03",
+        "title": "COFFE CUP WALKING CLUB",
+        "image": "./img/accessories/accessories03.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "",
+        "price": 12.5,
+        "size": ["U"],
+        "sale": false
+    },
+    {
+        "id": "accessories-05",
+        "title": "THE ATHLETIC WATER BOTTLE",
+        "image": "./img/accessories/accessories05.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "",
+        "price": 19.5,
+        "size": ["U"],
+        "sale": false
+    },
+    {
+        "id": "accessories-04",
+        "title": "KHAKI KEY CHAIN",
+        "image": "./img/accessories/accessories04.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "",
+        "price": 9.5,
+        "size": ["U"],
+        "sale": true
+    },
+    {
+        "id": "accessories-06",
+        "title": "HABANO LEATHER CARDHOLDER",
+        "image": "./img/accessories/accessories06.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "",
+        "price": 29.5,
+        "size": ["U"],
+        "sale": false
+    },
+    {
+        "id": "accessories-07",
+        "title": "THE NAUTICAL PRINTED CAP",
+        "image": "./img/accessories/accessories07.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "Gorra confeccionada en algodón estampado, con 5 paneles y bordado personalizado en frontal. Producto diseñado en exclusiva para la colección cápsula con la marca inglesa Parlez.",
+        "price": 36.5,
+        "size": ["U"],
+        "sale": false
+    },
+    {
+        "id": "accessories-08",
+        "title": "THE LEISURE SERVICES CAP",
+        "image": "./img/accessories/accessories08.png",
+        "category": {
+            "name": "Accessories",
+            "id": "accessories"
+        },
+        "description": "Gorra de sarga de algodón con 6 paneles desestructurados y bordado personalizado en frontal. Fabricada en China.",
+        "price": 30,
+        "size": ["U"],
+        "sale": true
+    }
+    
+
+]
+    
