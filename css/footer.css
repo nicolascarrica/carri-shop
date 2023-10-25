@@ -8,23 +8,27 @@ footer{
 
 .footer-content{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
 }
 
 .footer-content .logo{
-    height: 160px;
+    height: 80px;
 }
 
-.footer-title, .info{
+.info{
     color: rgba(255, 255, 255, 0.75);
     margin: 20px 0;
     text-transform: capitalize;
+    font-size: 12px; 
 }
 
 .footer-title{
-    margin-top: 80px;
-    color: #fff;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.75); 
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 20px;
 }
 
 .footer-social-container{
@@ -52,4 +56,58 @@ footer{
     text-align: center;
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact {
+    color: #fff;
+}
+
+.footer-contact .form-group {
+    margin-bottom: 20px;
+}
+
+/* .footer-contact input[type="text"],
+.footer-contact input[type="email"], */
+.footer-contact input,
+.footer-contact input,
+.footer-contact textarea {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #000;
+}
+
+.footer-contact textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+.footer-contact button[type="submit"] {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-contact button[type="submit"]:hover {
+    background: #999998;
+}
+
+.form-messages {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.success-message {
+    color: green; 
+}
+
+.error-message {
+    color: red;
 }
