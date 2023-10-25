@@ -193,3 +193,74 @@
     background-color: #333;
     color: rgb(245, 241, 241); 
 }
+
+@media screen and (max-width: 768px) {
+    .hero-section .logo {
+        max-height: 100px;
+    }
+
+    .hero-section .sub-heading {
+        font-size: 28px;
+    }
+
+    .product-container {
+        flex-direction: column; /* Cambia la dirección de flexión a columna */
+        align-items: center;
+    }
+
+    .pre-btn, .nxt-btn {
+       display: none;
+    }
+
+    .product-card {
+        max-width: none; /* Elimina el ancho máximo */
+        margin-right: 10px; /* Ajusta el espacio entre las tarjetas */
+    }
+
+    .size-button {
+        padding: 5px 8px; /* Ajusta el espaciado para los botones de tamaño */
+    }
+    .card-btn{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero-section .logo {
+        max-height: 80px;
+    }
+
+    .hero-section .sub-heading {
+        font-size: 24px;
+    }
+
+    .product-card {
+        max-width: none; /* Elimina el ancho máximo */
+        margin-right: 10px; /* Ajusta el espacio entre las tarjetas */
+    }
+
+    .size-button {
+        padding: 5px 5px; /* Restaura el espaciado original de los botones de tamaño si es necesario */
+    }
+}
+
+/* Estilos para pantallas de 320px y superiores */
+
+@media screen and (max-width: 320px) {
+    .hero-section .logo {
+        max-height: 60px;
+    }
+
+    .hero-section .sub-heading {
+        font-size: 20px;
+    }
+
+    .product-card {
+        max-width: none; /* Elimina el ancho máximo */
+        margin-right: 10px; /* Ajusta el espacio entre las tarjetas */
+    }
+
+    .size-button {
+        padding: 5px 5px; /* Restaura el espaciado original de los botones de tamaño si es necesario */
+    }
+}

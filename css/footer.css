@@ -66,10 +66,8 @@ footer{
     margin-bottom: 20px;
 }
 
-/* .footer-contact input[type="text"],
-.footer-contact input[type="email"], */
-.footer-contact input,
-.footer-contact input,
+.footer-contact input[type="text"],
+.footer-contact input[type="email"],
 .footer-contact textarea {
     width: 50%;
     padding: 5px;
@@ -110,4 +108,46 @@ footer{
 
 .error-message {
     color: red;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content .logo {
+        height: auto; 
+    }
+
+    .footer-title {
+        margin-top: 20px;
+    }
+
+    .footer-social-container {
+        margin-top: 20px;
+    }
+
+    .social-link {
+        margin: 10px 0;
+    }
+}
+
+/* Media query para pantallas de 420px o menos */
+@media (max-width: 420px) {
+    .footer-content {
+        width: 100%;
+    }
+}
+
+/* Media query para pantallas de 320px o menos */
+@media (max-width: 320px) {
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .info {
+        font-size: 10px; 
+    }
 }

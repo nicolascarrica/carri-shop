@@ -12,12 +12,16 @@
     width: 100%;
     background: #f5f5f5;
     z-index: 9;
+    
 }
 
 .nav{
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+    
 }
 
 .brand-logo{
@@ -27,43 +31,7 @@
 .nav-items{
     display: flex;
     align-items: center;
-}
-
-.search{
-    width: 500px;
-    display: flex;
-}
-
-.search-box{
-    width: 80%;
-    height: 40px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #d1d1d1;
-    text-transform: capitalize;
-    background: none;
-    color: #9a99a9;
-    outline: none;
-}
-
-.search-btn{
-    width: 20%;
-    height: 40px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #383838;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.search-box::placeholder{
-    color: #a9a9a9;
+    
 }
 
 .nav-items a{
@@ -75,12 +43,13 @@
 }
 
 .links-container{
+    margin-top: 10px;
     width: 100%;
     display: flex;
     padding: 10px 10vw;
     justify-content: center;
     list-style: none;
-    border-top: 1px solid #d1d1d1;
+    
 }
 
 .link{
@@ -148,30 +117,27 @@
 }
 
 @media (max-width: 768px) {
-    .search {
-        display: none;
-    }
     .links-container {
-        display: none; /* Oculta el ul con los enlaces de navegación */
+        display: none;
     }
 
     .menu-toggle {
-        display: block; /* Muestra el botón hamburguesa */
+        display: block; 
     }
 
     .categories {
-        display: none; /* Asegúrate de que el menú hamburguesa esté oculto por defecto */
+        display: none; 
     }
     .categories li::before {
-    content: none; /* Oculta los puntos */
+    content: none; 
     }
     
     .menu-toggle.active + .categories {
-        display: block; /* Muestra el menú hamburguesa cuando el botón está activo */
+        display: block; 
     }
 
     
     .brand-logo {
-        display: block; /* Asegura que el logotipo de la marca sea visible */
+        display: block; 
     }
 }
