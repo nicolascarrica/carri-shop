@@ -156,5 +156,4 @@ function checkout(){
     productContainer.classList.add('disabled');
     cartAction.classList.add('disabled');
     cartBuy.classList.remove('disabled');
-
 }
