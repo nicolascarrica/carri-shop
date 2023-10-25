@@ -16,24 +16,9 @@ const createNav = () => {
                 <li><a href="#shoes" class="link">shoes</a></li>
                 <li><a href="#accessories" class="link">accessories</a></li>
             </ul>
-            
             <a href="index.html"><img src="img/carri-logo1.png" class="brand-logo" alt=""></a>
-            
-            <div class="nav-items">
 
-                <div class="search">
-                    <input type="text" class="search-box" placeholder="search brand, product">
-                    <button class="search-btn">search</button>
-                </div>
-
-                <a href="#"><img src="img/user.png" alt=""></a>
-                <a href="cart.html"><img src="img/cart.png" alt="">
-                    <span id="cart-number" class="cart-number">0</span>
-                </a>
-            </div>
-        </div>
-        
-        <ul class="links-container">
+            <ul class="links-container">
             <li class="link-item"><a href="index.html" class="link">home</a></li>
             <li class="link-item"><a href="#sale" class="link">sales</a></li>
             <li class="link-item"><a href="#clothes" class="link">clothes</a></li>
@@ -41,6 +26,16 @@ const createNav = () => {
             <li class="link-item"><a href="#accessories" class="link">accessories</a></li>
             <li class="link-item"><a href="#footer" class="link">about us</a></li>
         </ul>
+            
+            
+            
+            <div class="nav-items">
+                <a href="cart.html"><img src="img/cart.png" alt="">
+                    <span id="cart-number" class="cart-number">0</span>
+                </a>
+            </div>
+        </div>
+    
     `;
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -52,6 +47,7 @@ const createNav = () => {
         categories.classList.toggle("active");
     });
 });
+
 }
 
 createNav();
