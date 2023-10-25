@@ -59,7 +59,6 @@ function createProductCard(product) {
   cardButton.textContent = 'add to cart';
 
   cardButton.addEventListener('click', () => {
-    // Verificar si se ha seleccionado un tamaño
     if (selectedSize) {
       addToCart(product);
     } else {
@@ -192,8 +191,3 @@ fetch('./js/products.json')
   .catch(error => {
     console.error('Error fetching products:', error);
   });
-
-
-
-
-
