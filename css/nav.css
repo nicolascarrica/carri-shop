@@ -112,4 +112,66 @@
     color: #fff;
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    margin-top: 15px;
+}
 
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.categories {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-top: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.categories.active {
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .search {
+        display: none;
+    }
+    .links-container {
+        display: none; /* Oculta el ul con los enlaces de navegación */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+
+    .categories {
+        display: none; /* Asegúrate de que el menú hamburguesa esté oculto por defecto */
+    }
+    .categories li::before {
+    content: none; /* Oculta los puntos */
+    }
+    
+    .menu-toggle.active + .categories {
+        display: block; /* Muestra el menú hamburguesa cuando el botón está activo */
+    }
+
+    
+    .brand-logo {
+        display: block; /* Asegura que el logotipo de la marca sea visible */
+    }
+}
