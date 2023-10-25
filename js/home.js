@@ -48,7 +48,6 @@ function createProductCard(product) {
       }
       sizeButton.classList.add('selected');
       selectedSize = sizeButton;
-      console.log("Selected size for product", product.id, "is", selectedSize.textContent);
     });
 
     sizesContainer.appendChild(sizeButton);
@@ -117,9 +116,16 @@ function addToCart(product) {
   if (existingProduct) {
     showToast("Product already added.");
   } else {
-   
-    product.quantity = 1;
-    productsInCart.push(product);
+    const productCopy = { ...product };
+
+    productCopy.selectedSize = selectedSize.textContent;
+    productCopy.quantity = 1;
+
+    if (product.sale) {
+      productCopy.price = product.price / 2;
+    }
+
+    productsInCart.push(productCopy);
     updateCartNumber();
     updateLocalStorage();
     showToast("Product added to cart!");
