@@ -6,19 +6,15 @@ const cartAction = document.querySelector('.cart-action');
 const cartBuy = document.querySelector('.cart-buy');
 let deleteButton = document.querySelectorAll('.remove-product');
 const cleanCartButton = document.querySelector('.clean-cart-button');
-const totalContainer = document.querySelector('.total-amount');
+const totalContainer = document.querySelector("#total");
 const checkoutButton = document.querySelector('.checkout-button');
-
-
 
 function createCartItem(){
     if(productsInCart && productsInCart.length > 0){
-        
         cartEmpty.classList.add("disabled");
         productContainer.classList.remove("disabled");
         cartAction.classList.remove("disabled");
         cartBuy.classList.add("disabled");
-
 
         productContainer.innerHTML = '';
 
@@ -33,22 +29,27 @@ function createCartItem(){
             </div>
             <div class="product-quantity">
                 <small>Quantity</small>
-                <p>${product.quantity}</p>
+                <input class="product-quantity-input" type="number" value="${product.quantity}" data-id="${product.id}" min="1" max="100">
             </div>
             <div class="product-price">
                 <small>Price</small>
-                <p>${product.price}</p>
+                <p>$ ${product.price}</p>
             </div>
             <div class="product-total">
                 <small>Total</small>
-                <p>${product.price * product.quantity}</p>
+                <p class="product-total-price">$ ${product.price * product.quantity}</p>
             </div>
-            <button class="remove-product" id="product-id"><i class="bi bi-trash3-fill"></i></button>
+            <button class="remove-product" id="${product.id}"><i class="bi bi-trash3-fill"></i></button>
             </div>
             `;
             productContainer.appendChild(productCart);
 
-        })
+            const quantityInput = productCart.querySelector('.product-quantity-input');
+            quantityInput.addEventListener('input', function() {
+                updateQuantity(product, quantityInput, productCart);
+            });
+        });
+
         updateDeleteButtons();
         updateTotal();
     } else {
@@ -60,6 +61,21 @@ function createCartItem(){
 }
 
 createCartItem();
+
+function updateQuantity(product, quantityInput, productCart) {
+    const newQuantity = parseInt(quantityInput.value, 10);
+    if (!isNaN(newQuantity) && newQuantity >= 1 && newQuantity <= 100) {
+        product.quantity = newQuantity;
+        const totalElement = productCart.querySelector('.product-total-price');
+        totalElement.textContent = `$ ${product.price * newQuantity}`;
+        updateTotal();
+        updateLocalStorage();
+    }
+}
+
+function updateLocalStorage() {
+    localStorage.setItem('products-in-cart', JSON.stringify(productsInCart));
+}
 
 function updateDeleteButtons(){
     deleteButton = document.querySelectorAll('.remove-product');
@@ -122,9 +138,12 @@ function cleanCart(){
     })
 }
 
-function updateTotal() {
-    const total = productsInCart.reduce((acc, product) => acc + product.price * product.quantity, 0);
-    total.innerText = `$${total.toFixed(2)}`;
+function updateTotal(){
+    let total = 0;
+    productsInCart.forEach((product) => {
+        total += product.price * product.quantity;
+    })
+    totalContainer.innerText = `$ ${total}`;
 }
 
 checkoutButton.addEventListener('click', checkout);
